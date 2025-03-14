@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Bootstrap Review</title>
   </head>
   <body>
-    <header role="banner" class="container">
+    <header role="banner" class="container-fluid">
       <div class="row">
         <!-- Rows have a max column size of 12 -->
         <div class="col-6 col-lg-12 box-one">
@@ -19,22 +20,47 @@
           <h1>Box Two</h1>
         </div>
       </div>
+      <!-- Buttons -->
+      <div class="row text-center">
+        <div class="col-12">
+          <button class="mx-3 p-5">One</button>
+          <button class="mx-3 p-5">Two</button>
+          <button class="mx-3 p-5">Three</button>
+        </div>
+      </div>
       <div class="row justify-content-between">
         <div class="col-3 box-three">.</div>
 
         <div class="col-6 box-four">.</div>
       </div>
     </header>
-    <main class="container">
+    <main class="container-fluid">
       <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 p-0">
           <img
             class="img-fluid"
             src="https://t3.ftcdn.net/jpg/03/55/28/80/360_F_355288042_An4jhyVFELBAY05m97yMQYDTDpNKeeJf.jpg"
             alt="soccer ball"
           />
         </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
       </div>
     </main>
   </body>
+  <script src="./js/bootstrap.js"></script>
+  <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
 </html>
